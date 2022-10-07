@@ -8,25 +8,189 @@
 body {
   margin: 0;
   padding:0;
-  font-family:Muli, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-family: Muli, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
-  background:#cccc;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  background: #fff;
   width:100%;
   height:100vh;
 }
 
-.btn{
-  border:none;
-  outline:none;
-  width: 80px;
-  height: 40px;
+/* .content{
+  display: flex;
+  align-items: flex-start;
+} */
 
-  background: #FFFFFF;
-  box-shadow: 0px 15px 20px -10px rgba(36, 36, 113, 0.0991313);
-  border-radius: 28px;
+#side-nav{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #bd5d38;
+}
+
+#side-nav .navbar-nav .nav-item {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  display: block;
+  margin-left: -30px;
+}
+#side-nav .navbar-toggler:focus {
+  outline-color: #d48a6e;
+}
+
+@media (min-width: 992px) {
+  #side-nav {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+
+  #side-nav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #side-nav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    margin-top: 18px;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #side-nav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #side-nav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #side-nav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #side-nav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+    margin-right: 3px;
+  }
+}
+
+.social-icons{
+  padding-bottom: 150px;
+}
+
+.social-icons .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.social-icons .social-icon:last-child {
+  margin-right: 0;
+}
+
+.social-icons .social-icon:hover {
+  background-color: #bd5d38;
+}
+
+#main{
+  padding: 40px !important;
+}
+
+section{
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 75rem;
+}
+
+section .res-section-content{
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  section.res-section {
+    min-height: 100vh;
+  }
+}
+@media (min-width: 992px) {
+  section.res-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-left: 270px;
+  }
+}
+
+#aboutpage{
+  margin-top: 50px;
+}
+
+.description{
+  color:#6C757D;
+}
+
+p{
+  color:#6C757D;
+}
+
+p.description {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color:#6C757D;
+}
+
+.address {
+  font-family: "Saira Extra Condensed";
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: -5px;
+  color: #6C757D;
+}
+
+h1{
+  font-family: "Saira Extra Condensed";
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.text{
+  color: #BD5D38 !important;
+}
+
+h2{
+  font-family: "Saira Extra Condensed";
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+h3{
+  font-family: "Saira Extra Condensed";
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
 }
