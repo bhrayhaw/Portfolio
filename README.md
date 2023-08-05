@@ -1,5 +1,4 @@
-# AzubiFrontEnd-challenge
-
+# Portfolio
 # Colors
 -primary color #BD5D38;
 -Main headings color #343A40;
